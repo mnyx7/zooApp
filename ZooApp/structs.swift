@@ -11,7 +11,7 @@ struct ZooList: Codable {
     let name: String
     let info: String
     let rating: Double
-    let about: [AboutZooList]?
+    let about: AboutZooList?
     let animals: [AnimalsList]?
 }
 
