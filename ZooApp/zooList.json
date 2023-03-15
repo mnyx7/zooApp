@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Zoo Khatai",
+        "info": "Khudu Mammadov 29",
+        "rating": 98.0,"image": "img",
+        "about": [
+            "image":"img1",
+            "name": "Zoooo",
+            "info":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "address": "My location",
+            "phone": "+994 51 1234567"
+        ],
+        "animals": [
+            "Aardvark",
+            "Albatross",
+            "Alligator",
+            "Alpaca",
+            "Ant",
+            "Anteater",
+            "Antelope",
+            "Ape",
+            "Armadillo",
+            "Donkey"]
+        
+    },
+    {
+        "name": "Zoo Nizami",
+        "info": "Qara Qarayev 124",
+        "rating": 95.0,
+        "image": "img",
+        "about": [
+            "image":"img1",
+            "name": "Zoooo",
+            "info":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "address": "My location",
+            "phone": "+994 51 1234567"
+        ],
+        "animals": ["Baboon",
+            "Badger",
+            "Barracuda",
+            "Bat",
+            "Bear",
+            "Beaver",
+            "Bee",
+            "Bison"]
+        
+    },
+    {
+        "name": "Zoo Narimanov",
+        "info": "Jeyhun Hacibeyli 18",
+        "rating": 88.0,
+        "image": "img",
+        "about": [
+            "image":"img1",
+            "info":
+            "info":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "address": "My location",
+            "phone": "+994 51 1234567"
+        ],
+        "animals": ["Boar",
+            "Buffalo",
+            "Butterfly",
+            "Camel",
+            "Capybara",
+            "Caribou",
+            "Cassowary",
+            "Cat",
+            "Caterpillar",
+            "Cattle"]
+        
+    },
+    {
+        "name": "Zoo Sabail",
+        "info": "Street 33",
+        "rating": 99.0,
+        "image": "img",
+        "about": [
+            "image":"img1",
+            "name": "Zoooo",
+            "info":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "address": "My location",
+            "phone": "+994 51 1234567"
+        ],
+        "animals": ["Chamois",
+            "Cheetah",
+            "Chicken",
+            "Chimpanzee",
+            "Chinchilla",
+            "Chough",
+            "Clam",
+            "Cobra"]
+        
+        
+    },
+    {
+        "name": "Zoo Nesimi",
+        "info": "Street 29",
+        "rating": 86.0,
+        "image": "img",
+        "about": [
+            "image":"img1",
+            "info":
+            "info":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "address": "My location",
+            "phone": "+994 51 1234567"
+        ],
+        "animals": ["Cockroach",
+            "Cod",
+            "Cormorant",
+            "Coyote",
+            "Crab",
+            "Crane",
+            "Crocodile",
+            "Crow"]
+        
+        
+    }
+]

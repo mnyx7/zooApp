@@ -1,0 +1,17 @@
+[
+  {
+    "image": "zoo1",
+    "title": "Zoo App",
+    "text": "Welcome to our app!"
+  },  
+  {
+    "image": "zoo2",
+  "title": "About App",
+  "text": "Zoo addresses, animals and many more."
+  },
+  {
+    "image": "zoo3",
+    "title": "Easy to use",
+    "text": "Best experience for you."
+  }
+]
