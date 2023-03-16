@@ -21,6 +21,8 @@
 		6597358E29BB695000392ACC /* zooList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6597358D29BB695000392ACC /* zooList.json */; };
 		65B0103B29BC77A300DCD1F9 /* AboutZooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B0103A29BC77A300DCD1F9 /* AboutZooViewController.swift */; };
 		65C6B28F29B7B41600FA963D /* zooApp.json in Resources */ = {isa = PBXBuildFile; fileRef = 65C6B28E29B7B41600FA963D /* zooApp.json */; };
+		65CFEDB929C37AE00081578E /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CFEDB829C37AE00081578E /* AnimalsViewController.swift */; };
+		65CFEDBB29C37CC90081578E /* AnimalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CFEDBA29C37CC90081578E /* AnimalCollectionViewCell.swift */; };
 		65E3A0DF29B729E200F735C1 /* structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A0DE29B729E200F735C1 /* structs.swift */; };
 		65E3A0E129B72C8500F735C1 /* OnboardingCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A0E029B72C8500F735C1 /* OnboardingCellCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		6597358D29BB695000392ACC /* zooList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = zooList.json; sourceTree = "<group>"; };
 		65B0103A29BC77A300DCD1F9 /* AboutZooViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutZooViewController.swift; sourceTree = "<group>"; };
 		65C6B28E29B7B41600FA963D /* zooApp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = zooApp.json; sourceTree = "<group>"; };
+		65CFEDB829C37AE00081578E /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
+		65CFEDBA29C37CC90081578E /* AnimalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCollectionViewCell.swift; sourceTree = "<group>"; };
 		65E3A0DE29B729E200F735C1 /* structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structs.swift; sourceTree = "<group>"; };
 		65E3A0E029B72C8500F735C1 /* OnboardingCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCellCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +64,8 @@
 		6532310229B34503002463EA = {
 			isa = PBXGroup;
 			children = (
+				65CFEDBA29C37CC90081578E /* AnimalCollectionViewCell.swift */,
+				65CFEDB829C37AE00081578E /* AnimalsViewController.swift */,
 				6532310D29B34503002463EA /* ZooApp */,
 				6532310C29B34503002463EA /* Products */,
 			);
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6532311929B34503002463EA /* ZooApp.xcdatamodeld in Sources */,
+				65CFEDBB29C37CC90081578E /* AnimalCollectionViewCell.swift in Sources */,
 				6597358829B8600800392ACC /* ZooListViewController.swift in Sources */,
+				65CFEDB929C37AE00081578E /* AnimalsViewController.swift in Sources */,
 				6532311329B34503002463EA /* ViewController.swift in Sources */,
 				6597358C29BB64FA00392ACC /* ZooListCollectionViewCell.swift in Sources */,
 				6532312629B3485D002463EA /* OnboardingViewController.swift in Sources */,

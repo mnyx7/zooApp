@@ -18,9 +18,9 @@ struct ZooList: Codable {
 struct AboutZooList: Codable {
     let image: String
     let name: String
-    let info: String
+    let info: String?
     let address: String
-    let phone: String
+    let phone: String?
 }
 
 struct AnimalsList: Codable {

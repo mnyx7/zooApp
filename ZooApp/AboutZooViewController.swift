@@ -9,22 +9,24 @@ import UIKit
 
 class AboutZooViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var zooInfo: UILabel!
+    @IBOutlet weak var zooImg: UIImageView!
+    @IBOutlet weak var zooAddress: UILabel!
+    @IBOutlet weak var zooPhone: UILabel!
+    var aboutZoo: AboutZooList?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        titleLabel.text = aboutZoo?.name
+        zooImg.image = UIImage(named: aboutZoo?.image ?? "" )
+        zooInfo.text = aboutZoo?.info
+        zooPhone.text = aboutZoo?.phone
+        zooAddress.text = aboutZoo?.address
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
 }

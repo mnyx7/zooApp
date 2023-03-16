@@ -34,7 +34,8 @@ class OnboardingViewController: UIViewController {
 //        present(vc!, animated: true)
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let sceneDelegate = scene.delegate as? SceneDelegate{
-            sceneDelegate.setRootController(windowScene: scene)
+            sceneDelegate.setOnboardingRootController(windowScene: scene)
+            UserDefaults.standard.set(true, forKey: "onboarded")
         }
     }
     

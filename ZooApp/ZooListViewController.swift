@@ -10,17 +10,8 @@ class ZooListViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+   
         jsonFileRead()
-    }
-    
-    @IBAction func aboutZooButton(_ sender: Any) {
-        let aboutZooVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(AboutZooViewController.self)") as! AboutZooViewController
-        self.navigationController?.show(aboutZooVC, sender: nil)
-
-    }
-    
-    @IBAction func addToFavorites(_ sender: Any) {
     }
     
     func jsonFileRead(){
@@ -47,14 +38,24 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell.zooName.text = zooList[indexPath.item].name
         cell.zooInfo.text = zooList[indexPath.item].info
         cell.zooRating.text = "\(zooList[indexPath.item].rating)"
+        
+        cell.tag = indexPath.item
+        cell.aboutZooCallBack = { index in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AboutZooViewController") as! AboutZooViewController
+            vc.aboutZoo = self.zooList[index].about
+            self.navigationController?.present(vc, animated: true)
+        }
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return  CGSize(width: collectionView.frame.width, height: 150)
     }
-    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+//
     
     
 }
-

@@ -13,7 +13,14 @@ class ZooListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var zooInfo: UILabel!
     @IBOutlet weak var zooRating: UILabel!
  
-    @IBOutlet weak var aboutZoo: NSLayoutConstraint!
+    var aboutZooCallBack: ((Int)->())?
     
-    @IBOutlet weak var addToFavorites: UIButton!
+    @IBAction func aboutZoo(_ sender: Any) {
+        aboutZooCallBack?(tag)
+    }
+    
+    @IBAction func addToFav(_ sender: Any) {
+        
+    }
+    
 }
