@@ -9,11 +9,12 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         jsonFileRead()
  }
     
-    func jsonFileRead(){
-        if let jsonFile = Bundle.main.url(forResource: "zooApp", withExtension: "json"){
+    func jsonFileRead() {
+        if let jsonFile = Bundle.main.url(forResource: "zooApp", withExtension: "json") {
             let data = (try? Data(contentsOf: jsonFile))!
             do {
                 slides = try JSONDecoder().decode([OnboardingSlide].self, from: data)
@@ -26,11 +27,11 @@ class OnboardingViewController: UIViewController {
     }
     
     @IBAction func skipOnboardingButton(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "tabbar")
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "tabbar")
 //        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
        // navigationController?.show(vc, sender: nil)
-        vc?.modalPresentationStyle = .fullScreen
-        present(vc!, animated: true)
+//        vc?.modalPresentationStyle = .fullScreen
+//        present(vc!, animated: true)
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let sceneDelegate = scene.delegate as? SceneDelegate{
             sceneDelegate.setRootController(windowScene: scene)
