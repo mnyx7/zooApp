@@ -51,3 +51,12 @@ struct ZooListPage: Codable{
 //        ]
 //    }
 }
+
+struct Profile: Codable{
+    let fullname     : String
+    let email        : String
+    let birthdate    : String
+    let password     : String
+    let phoneNumber  : String
+    
+}
