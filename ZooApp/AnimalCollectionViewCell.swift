@@ -8,8 +8,9 @@
 import UIKit
 
 class AnimalCollectionViewCell: UICollectionViewCell {
+    @IBAction func addToFav(_ sender: Any) {
+    }
     
-    @IBOutlet weak var animalToFav: UIButton!
     @IBOutlet weak var animalImg: UIImageView!
     @IBOutlet weak var animalName: UILabel!
 }

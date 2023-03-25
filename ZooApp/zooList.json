@@ -11,7 +11,29 @@
             "address": "My location",
             "phone": "+994 51 1234567"
         },
-        "animal": []
+        "animals": [
+            {
+                "image": "zoo1",
+                "animal": "Leopard"
+               
+            },
+            {
+                "image": "zoo2",
+                "animal": "Polar Bear"
+            },
+            {
+                "image": "zoo3",
+                "animal": "Camel"
+            },
+            {
+                "image": "zoo1",
+                "animal": "Elephant"
+            },
+            {
+                "image": "zoo2",
+                "animal": "Crocodile"
+            }
+        ]
     },
     {
         "name": "Zoo Khatai",

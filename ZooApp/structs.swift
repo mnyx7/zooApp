@@ -24,9 +24,9 @@ struct AboutZooList: Codable {
 }
 
 struct AnimalsList: Codable {
-    let image: String
-    let name: String
-    let animal: [AboutAnimal]
+    let image: String?
+    let animal: String?
+    let about: String?
 }
 
 struct AboutAnimal: Codable {

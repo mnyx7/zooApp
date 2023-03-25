@@ -40,11 +40,21 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell.zooRating.text = "\(zooList[indexPath.item].rating)"
         
         cell.tag = indexPath.item
+        //????
         cell.aboutZooCallBack = { index in
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AboutZooViewController") as! AboutZooViewController
             vc.aboutZoo = self.zooList[index].about
             self.navigationController?.present(vc, animated: true)
         }
+        //        login olmayibsa login sehifesine kechsin, olubsa favorite ya da evvelki sehifeye atsin
+                cell.favZooCallBack = {
+                    if UserDefaults.standard.bool(forKey: "loggedIn") {
+                        print("hi")
+                    } else {
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                        self.navigationController?.show(vc, sender: nil)
+                    }
+                }
         
         return cell
     }
@@ -52,10 +62,13 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return  CGSize(width: collectionView.frame.width, height: 150)
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-//
+
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AnimalsViewController") as! AnimalsViewController
+        vc.animalList = zooList[indexPath.item].animals ?? []
+        navigationController?.show(vc, sender: nil)
+    }
     
 }

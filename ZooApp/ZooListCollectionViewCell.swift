@@ -14,12 +14,15 @@ class ZooListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var zooRating: UILabel!
  
     var aboutZooCallBack: ((Int)->())?
+    var favZooCallBack: (()->())?
     
     @IBAction func aboutZoo(_ sender: Any) {
+        //??? tag nedi
         aboutZooCallBack?(tag)
     }
     
     @IBAction func addToFav(_ sender: Any) {
+        favZooCallBack?()
         
     }
     

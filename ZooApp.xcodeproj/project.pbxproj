@@ -68,8 +68,6 @@
 		6532310229B34503002463EA = {
 			isa = PBXGroup;
 			children = (
-				650869E129CDC4370029CF66 /* RegisterViewController.swift */,
-				650869DF29CDC4000029CF66 /* LoginViewController.swift */,
 				6532310D29B34503002463EA /* ZooApp */,
 				6532310C29B34503002463EA /* Products */,
 			);
@@ -97,14 +95,16 @@
 				65B0103A29BC77A300DCD1F9 /* AboutZooViewController.swift */,
 				65CFEDBA29C37CC90081578E /* AnimalCollectionViewCell.swift */,
 				65CFEDB829C37AE00081578E /* AnimalsViewController.swift */,
+				650869E129CDC4370029CF66 /* RegisterViewController.swift */,
+				650869DF29CDC4000029CF66 /* LoginViewController.swift */,
 				65E3A0DE29B729E200F735C1 /* structs.swift */,
+				65C6B28E29B7B41600FA963D /* zooApp.json */,
+				6597358D29BB695000392ACC /* zooList.json */,
 				6532311A29B34505002463EA /* Assets.xcassets */,
 				6532311429B34503002463EA /* Main.storyboard */,
 				6532311C29B34505002463EA /* LaunchScreen.storyboard */,
 				6532311F29B34505002463EA /* Info.plist */,
 				6532311729B34503002463EA /* ZooApp.xcdatamodeld */,
-				65C6B28E29B7B41600FA963D /* zooApp.json */,
-				6597358D29BB695000392ACC /* zooList.json */,
 			);
 			path = ZooApp;
 			sourceTree = "<group>";
