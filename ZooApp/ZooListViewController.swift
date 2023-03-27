@@ -7,6 +7,8 @@ class ZooListViewController: UIViewController  {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var zooList = [ZooList]()
+    //dublicate for search
+    var zooListOriginal = [ZooList]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,7 @@ class ZooListViewController: UIViewController  {
             let data = (try? Data(contentsOf: jsonFile))!
             do {
                 zooList = try JSONDecoder().decode([ZooList].self, from: data)
+                zooListOriginal = zooList
                 zooListCollection.reloadData()
             } catch {
                 print(error.localizedDescription)
@@ -28,7 +31,7 @@ class ZooListViewController: UIViewController  {
     }
 }
 
-extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         zooList.count
     }
@@ -46,7 +49,7 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
             vc.aboutZoo = self.zooList[index].about
             self.navigationController?.present(vc, animated: true)
         }
-        //        login olmayibsa login sehifesine kechsin, olubsa favorite ya da evvelki sehifeye atsin
+        //        if not loged in yet
                 cell.favZooCallBack = {
                     if UserDefaults.standard.bool(forKey: "loggedIn") {
                         print("hi")
@@ -59,6 +62,17 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
         return cell
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            if searchText.isEmpty {
+                zooList = zooListOriginal
+            } else {
+                zooList = zooListOriginal.filter({ item in
+                    item.name?.contains(searchText) ?? false
+                })
+            }
+        zooListCollection.reloadData()
+        }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return  CGSize(width: collectionView.frame.width, height: 150)
     }
@@ -67,7 +81,7 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "AnimalsViewController") as! AnimalsViewController
-        vc.animalList = zooList[indexPath.item].animals ?? []
+        vc.animalList = zooList[indexPath.item].animal ?? []
         navigationController?.show(vc, sender: nil)
     }
     

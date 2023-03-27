@@ -9,20 +9,12 @@ import UIKit
 import SwiftUI
 
 class AnimalsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        animalList.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnimalCollectionViewCell", for: indexPath) as! AnimalCollectionViewCell
-        cell.animalName.text = animalList[indexPath.item].animal
-        cell.animalName.text = animalList[indexPath.item].image
-        return cell
-    }
-    
 
+    @IBOutlet weak var animalSearch: UISearchBar!
+    
     @IBOutlet weak var animalListCollection: UICollectionView!
     var animalList = [AnimalsList]()
+    var animalListOriginal = [AnimalsList]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +32,34 @@ class AnimalsViewController: UIViewController, UICollectionViewDelegate, UIColle
             }
             print((jsonFile))
         }
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        animalList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnimalCollectionViewCell", for: indexPath) as! AnimalCollectionViewCell
+        cell.animalImg.image = UIImage(named: animalList[indexPath.item].image ?? "")
+        cell.animalName.text = animalList[indexPath.item].animal
+        cell.tag = indexPath.item
+        // about animal page yarat sonra
+        cell.animalListCallBack = { index in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AnimalInfoViewController") as! AnimalInfoViewController
+            vc.animalsInfo = self.animalList[index].about
+            self.navigationController?.present(vc, animated: true)
+        }
+        return cell
+    }
+    
+    func searchAnimal(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            animalList = animalListOriginal
+        } else {
+            animalList = animalListOriginal.filter({ item in
+                item.animal?.contains(searchText) ?? false
+            })
+        }
+        animalListCollection.reloadData()
     }
 
 }

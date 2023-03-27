@@ -50,7 +50,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCellCollectionViewCell", for: indexPath) as! OnboardingCellCollectionViewCell
         cell.textSlider.text = slides[indexPath.item].text
         cell.titleSlider.text = slides[indexPath.item].title
-        cell.imgSlider.image = UIImage(named: slides[indexPath.item].image ) 
+        cell.imgSlider.image = UIImage(named: slides[indexPath.item].image ?? "" ) 
 //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! OnboardingCellCollectionViewCell
 //        cell.setup(slides[indexPath.row])
       return cell

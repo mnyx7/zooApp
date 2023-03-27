@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65045CAD29D0D78100305022 /* AnimalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65045CAC29D0D78100305022 /* AnimalInfoViewController.swift */; };
 		650869E029CDC4000029CF66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650869DF29CDC4000029CF66 /* LoginViewController.swift */; };
 		650869E229CDC4370029CF66 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650869E129CDC4370029CF66 /* RegisterViewController.swift */; };
 		6532310F29B34503002463EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532310E29B34503002463EA /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65045CAC29D0D78100305022 /* AnimalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfoViewController.swift; sourceTree = "<group>"; };
 		650869DF29CDC4000029CF66 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		650869E129CDC4370029CF66 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6532310B29B34503002463EA /* ZooApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				65B0103A29BC77A300DCD1F9 /* AboutZooViewController.swift */,
 				65CFEDBA29C37CC90081578E /* AnimalCollectionViewCell.swift */,
 				65CFEDB829C37AE00081578E /* AnimalsViewController.swift */,
+				65045CAC29D0D78100305022 /* AnimalInfoViewController.swift */,
 				650869E129CDC4370029CF66 /* RegisterViewController.swift */,
 				650869DF29CDC4000029CF66 /* LoginViewController.swift */,
 				65E3A0DE29B729E200F735C1 /* structs.swift */,
@@ -188,6 +191,7 @@
 				6597358829B8600800392ACC /* ZooListViewController.swift in Sources */,
 				65CFEDB929C37AE00081578E /* AnimalsViewController.swift in Sources */,
 				6532311329B34503002463EA /* ViewController.swift in Sources */,
+				65045CAD29D0D78100305022 /* AnimalInfoViewController.swift in Sources */,
 				650869E229CDC4370029CF66 /* RegisterViewController.swift in Sources */,
 				6597358C29BB64FA00392ACC /* ZooListCollectionViewCell.swift in Sources */,
 				6532312629B3485D002463EA /* OnboardingViewController.swift in Sources */,

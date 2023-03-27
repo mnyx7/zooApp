@@ -11,32 +11,56 @@
             "address": "My location",
             "phone": "+994 51 1234567"
         },
-        "animals": [
+        "animal": [
             {
-                "image": "zoo1",
-                "animal": "Leopard"
-               
+            "image": "leopard",
+            "animal": "Leopard",
+            "about": {
+                "image": "leopard",
+                "name": "Leopard",
+                "info": "The leopard (Panthera pardus) is one of the five extant species in the genus Panthera, a member of the cat family, Felidae. It occurs in a wide range in sub-Saharan Africa, in some parts of Western and Central Asia, Southern Russia, and on the Indian subcontinent to Southeast and East Asia. It is listed as Vulnerable on the IUCN Red List because leopard populations are threatened by habitat loss and fragmentation, and are declining in large parts of the global range. The leopard is considered locally extinct in Hong Kong, Singapore, South Korea, Jordan, Morocco, Togo, the United Arab Emirates, Uzbekistan, Lebanon, Mauritania, Kuwait, Syria, Libya, Tunisia and most likely in North Korea, Gambia, Laos, Lesotho, Tajikistan, Vietnam and Israel. Contemporary records suggest that the leopard occurs in only 25% of its historical global range."
+            }
             },
             {
-                "image": "zoo2",
-                "animal": "Polar Bear"
+            "image": "polarbear",
+            "animal": "Polar Bear",
+            "about": {
+                "image": "polarbear",
+                "name": "Polar Bear",
+                "info": "The polar bear (Ursus maritimus) is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses, this includes the most northern regions of North America and Eurasia. It is the largest extant bear species, as well as the largest extant land carnivore. A boar (adult male) weighs around 350–700 kg (770–1,540 lb), while a sow (adult female) is about half that size. Although it is the sister species of the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice and open water, and for hunting seals, which make up most of its diet. Although most polar bears are born on land, they spend most of their time on the sea ice. Their scientific name means maritime bear and derives from this fact. Polar bears hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present. Because of their dependence on the sea ice, polar bears are classified as marine mammals. Because of expected habitat loss caused by climate change, the polar bear is classified as a vulnerable species. For decades, large-scale hunting raised international concern for the future of the species, but populations rebounded after controls and quotas began to take effect. For thousands of years, the polar bear has been a key figure in the material, spiritual, and cultural life of circumpolar peoples, and polar bears remain important in their cultures. Historically, the polar bear has also been known as the white bear. It is sometimes referred to as the nanook, based on the Inuit term nanuq."
+            }
             },
             {
-                "image": "zoo3",
-                "animal": "Camel"
+            "image": "camel",
+            "animal": "Camel",
+            "about": {
+                "image": "camel",
+                "name": "Camel",
+                "info": "A camel (from: Latin: camelus and Greek: κάμηλος (kamēlos) from Hebrew or Phoenician: גָמָל gāmāl.) is an even-toed ungulate in the genus Camelus that bears distinctive fatty deposits known as humps on its back. Camels have long been domesticated and, as livestock, they provide food (milk and meat) and textiles (fiber and felt from hair). Camels are working animals especially suited to their desert habitat and are a vital means of transport for passengers and cargo. There are three surviving species of camel. The one-humped dromedary makes up 94% of the world's camel population, and the two-humped Bactrian camel makes up 6%. The wild Bactrian camel is a separate species and is now critically endangered.The word camel is also used informally in a wider sense, where the more correct term is camelid, to include all seven species of the family Camelidae: the true camels (the above three species), along with the New World camelids: the llama, the alpaca, the guanaco, and the vicuña, which belong to the separate tribe Lamini. Camelids originated in North America during the Eocene, with the ancestor of modern camels, Paracamelus, migrating across the Bering land bridge into Asia during the late Miocene, around 6 million years ago."
+            }
             },
             {
-                "image": "zoo1",
-                "animal": "Elephant"
+            "image": "elephant",
+            "animal": "Elephant",
+            "about": {
+                "image": "elephant",
+                "name": "Elephant",
+                "info": "Elephants are the largest existing land animals. Three living species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. They are the only surviving members of the family Elephantidae and the order Proboscidea. The order was formerly much more diverse during the Pleistocene, but most species became extinct during the Late Pleistocene epoch. Distinctive features of elephants include a long proboscis called a trunk, tusks, large ear flaps, pillar-like legs, and tough but sensitive skin. The trunk is used for breathing and is prehensile, bringing food and water to the mouth, and grasping objects. Tusks, which are derived from the incisor teeth, serve both as weapons and as tools for moving objects and digging. The large ear flaps assist in maintaining a constant body temperature as well as in communication. African elephants have larger ears and concave backs, whereas Asian elephants have smaller ears, and convex or level backs."
+            }
             },
             {
-                "image": "zoo2",
-                "animal": "Crocodile"
+            "image": "crocodile",
+            "animal": "Crocodile",
+            "about": {
+                "image": "crocodile",
+                "name": "Crocodile",
+                "info": "Crocodiles (family Crocodylidae) or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. The term crocodile is sometimes used even more loosely to include all extant members of the order Crocodilia, which includes the alligators and caimans (family Alligatoridae), the gharial and false gharial (family Gavialidae) among other extinct taxa. Although they appear similar, crocodiles, alligators and the gharial belong to separate biological families. The gharial, with its narrow snout, is easier to distinguish, while morphological differences are more difficult to spot in crocodiles and alligators. The most obvious external differences are visible in the head, with crocodiles having narrower and longer heads, with a more V-shaped than a U-shaped snout compared to alligators and caimans. Another obvious trait is that the upper and lower jaws of the crocodiles are the same width, and the teeth in the lower jaw fall along the edge or outside the upper jaw when the mouth is closed; therefore, all teeth are visible, unlike an alligator, which possesses in the upper jaw small depressions into which the lower teeth fit. Also, when the crocodile's mouth is closed, the large fourth tooth in the lower jaw fits into a constriction in the upper jaw. For hard-to-distinguish specimens, the protruding tooth is the most reliable feature to define the species' family. Crocodiles have more webbing on the toes of the hind feet and can better tolerate saltwater due to specialized salt glands for filtering out salt, which are present, but non-functioning, in alligators. Another trait that separates crocodiles from other crocodilians is their much higher levels of aggression."
+            }
             }
         ]
     },
     {
-        "name": "Zoo Khatai",
+        "name": "Zoo Narimanov",
         "info": "Khudu Mammadov 29",
         "rating": 98.0,
         "image": "img",
@@ -47,10 +71,56 @@
             "address": "My location",
             "phone": "+994 51 1234567"
         },
-        "animal": []
+        "animal": [
+            {
+            "image": "leopard",
+            "animal": "Leopard",
+            "about": {
+                "image": "leopard",
+                "name": "Leopard",
+                "info": "The leopard (Panthera pardus) is one of the five extant species in the genus Panthera, a member of the cat family, Felidae. It occurs in a wide range in sub-Saharan Africa, in some parts of Western and Central Asia, Southern Russia, and on the Indian subcontinent to Southeast and East Asia. It is listed as Vulnerable on the IUCN Red List because leopard populations are threatened by habitat loss and fragmentation, and are declining in large parts of the global range. The leopard is considered locally extinct in Hong Kong, Singapore, South Korea, Jordan, Morocco, Togo, the United Arab Emirates, Uzbekistan, Lebanon, Mauritania, Kuwait, Syria, Libya, Tunisia and most likely in North Korea, Gambia, Laos, Lesotho, Tajikistan, Vietnam and Israel. Contemporary records suggest that the leopard occurs in only 25% of its historical global range."
+            }
+            },
+            {
+            "image": "polarbear",
+            "animal": "Polar Bear",
+            "about": {
+                "image": "polarbear",
+                "name": "Polar Bear",
+                "info": "The polar bear (Ursus maritimus) is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses, this includes the most northern regions of North America and Eurasia. It is the largest extant bear species, as well as the largest extant land carnivore. A boar (adult male) weighs around 350–700 kg (770–1,540 lb), while a sow (adult female) is about half that size. Although it is the sister species of the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice and open water, and for hunting seals, which make up most of its diet. Although most polar bears are born on land, they spend most of their time on the sea ice. Their scientific name means maritime bear and derives from this fact. Polar bears hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present. Because of their dependence on the sea ice, polar bears are classified as marine mammals. Because of expected habitat loss caused by climate change, the polar bear is classified as a vulnerable species. For decades, large-scale hunting raised international concern for the future of the species, but populations rebounded after controls and quotas began to take effect. For thousands of years, the polar bear has been a key figure in the material, spiritual, and cultural life of circumpolar peoples, and polar bears remain important in their cultures. Historically, the polar bear has also been known as the white bear. It is sometimes referred to as the nanook, based on the Inuit term nanuq."
+            }
+            },
+            {
+            "image": "camel",
+            "animal": "Camel",
+            "about": {
+                "image": "camel",
+                "name": "Camel",
+                "info": "A camel (from: Latin: camelus and Greek: κάμηλος (kamēlos) from Hebrew or Phoenician: גָמָל gāmāl.) is an even-toed ungulate in the genus Camelus that bears distinctive fatty deposits known as humps on its back. Camels have long been domesticated and, as livestock, they provide food (milk and meat) and textiles (fiber and felt from hair). Camels are working animals especially suited to their desert habitat and are a vital means of transport for passengers and cargo. There are three surviving species of camel. The one-humped dromedary makes up 94% of the world's camel population, and the two-humped Bactrian camel makes up 6%. The wild Bactrian camel is a separate species and is now critically endangered.The word camel is also used informally in a wider sense, where the more correct term is camelid, to include all seven species of the family Camelidae: the true camels (the above three species), along with the New World camelids: the llama, the alpaca, the guanaco, and the vicuña, which belong to the separate tribe Lamini. Camelids originated in North America during the Eocene, with the ancestor of modern camels, Paracamelus, migrating across the Bering land bridge into Asia during the late Miocene, around 6 million years ago."
+            }
+            },
+            {
+            "image": "elephant",
+            "animal": "Elephant",
+            "about": {
+                "image": "elephant",
+                "name": "Elephant",
+                "info": "Elephants are the largest existing land animals. Three living species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. They are the only surviving members of the family Elephantidae and the order Proboscidea. The order was formerly much more diverse during the Pleistocene, but most species became extinct during the Late Pleistocene epoch. Distinctive features of elephants include a long proboscis called a trunk, tusks, large ear flaps, pillar-like legs, and tough but sensitive skin. The trunk is used for breathing and is prehensile, bringing food and water to the mouth, and grasping objects. Tusks, which are derived from the incisor teeth, serve both as weapons and as tools for moving objects and digging. The large ear flaps assist in maintaining a constant body temperature as well as in communication. African elephants have larger ears and concave backs, whereas Asian elephants have smaller ears, and convex or level backs."
+            }
+            },
+            {
+            "image": "crocodile",
+            "animal": "Crocodile",
+            "about": {
+                "image": "crocodile",
+                "name": "Crocodile",
+                "info": "Crocodiles (family Crocodylidae) or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. The term crocodile is sometimes used even more loosely to include all extant members of the order Crocodilia, which includes the alligators and caimans (family Alligatoridae), the gharial and false gharial (family Gavialidae) among other extinct taxa. Although they appear similar, crocodiles, alligators and the gharial belong to separate biological families. The gharial, with its narrow snout, is easier to distinguish, while morphological differences are more difficult to spot in crocodiles and alligators. The most obvious external differences are visible in the head, with crocodiles having narrower and longer heads, with a more V-shaped than a U-shaped snout compared to alligators and caimans. Another obvious trait is that the upper and lower jaws of the crocodiles are the same width, and the teeth in the lower jaw fall along the edge or outside the upper jaw when the mouth is closed; therefore, all teeth are visible, unlike an alligator, which possesses in the upper jaw small depressions into which the lower teeth fit. Also, when the crocodile's mouth is closed, the large fourth tooth in the lower jaw fits into a constriction in the upper jaw. For hard-to-distinguish specimens, the protruding tooth is the most reliable feature to define the species' family. Crocodiles have more webbing on the toes of the hind feet and can better tolerate saltwater due to specialized salt glands for filtering out salt, which are present, but non-functioning, in alligators. Another trait that separates crocodiles from other crocodilians is their much higher levels of aggression."
+            }
+            }
+        ]
     },
     {
-        "name": "Zoo Khatai",
+        "name": "Zoo Nizami",
         "info": "Khudu Mammadov 29",
         "rating": 98.0,
         "image": "img",

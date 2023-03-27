@@ -1,45 +1,45 @@
 import Foundation
 
 struct OnboardingSlide: Codable {
-    let title: String
-    let text: String
-    let image: String
+    let title: String?
+    let text: String?
+    let image: String?
 }
 
 struct ZooList: Codable {
     let image: String?
-    let name: String
-    let info: String
-    let rating: Double
+    let name: String?
+    let info: String?
+    let rating: Double?
     let about: AboutZooList?
-    let animals: [AnimalsList]?
+    let animal: [AnimalsList]?
 }
 
 struct AboutZooList: Codable {
-    let image: String
-    let name: String
+    let image: String?
+    let name: String?
     let info: String?
-    let address: String
+    let address: String?
     let phone: String?
 }
 
 struct AnimalsList: Codable {
     let image: String?
     let animal: String?
-    let about: String?
+    let about: AboutAnimal?
 }
 
 struct AboutAnimal: Codable {
-    let image: String
-    let name: String
-    let info: String
+    let image: String?
+    let name: String?
+    let about: String?
 }
 // zoolist Page
 
 struct ZooListPage: Codable{
-    let name: String
-    let info: String
-    let rating: Double
+    let name: String?
+    let info: String?
+    let rating: Double?
     
 //    static func all() -> [ZooListPage]{
 //        return[
@@ -53,10 +53,10 @@ struct ZooListPage: Codable{
 }
 
 struct Profile: Codable{
-    let fullname     : String
-    let email        : String
-    let birthdate    : String
-    let password     : String
-    let phoneNumber  : String
+    let fullname     : String?
+    let email        : String?
+    let birthdate    : String?
+    let password     : String?
+    let phoneNumber  : String?
     
 }
