@@ -2,13 +2,23 @@ import UIKit
 import SwiftUI
 
 class ZooListViewController: UIViewController  {
-    @IBOutlet weak var gridToListButton: UIImageView!
     @IBOutlet weak var zooListCollection: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBOutlet weak var gridButtonOutlet: UIButton!
+    @IBAction func gridToList(_ sender: Any) {
+        
+        isgrid = !isgrid
+        let imageName = isgrid ? "square.grid.3x1.below.line.grid.1x2" : "list.bullet"
+        gridButtonOutlet.setImage(UIImage(systemName: imageName),
+                               for: .normal)
+        zooListCollection.reloadData()
+    }
     var zooList = [ZooList]()
     //dublicate for search
     var zooListOriginal = [ZooList]()
+    //listGrid
+    var isgrid = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +50,7 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ZooListCollectionViewCell", for: indexPath) as! ZooListCollectionViewCell
         cell.zooName.text = zooList[indexPath.item].name
         cell.zooInfo.text = zooList[indexPath.item].info
-        cell.zooRating.text = "\(zooList[indexPath.item].rating)"
+        cell.zooRating.text = "\(zooList[indexPath.item].rating ?? Double())"
         
         cell.tag = indexPath.item
         //????
@@ -73,9 +83,16 @@ extension ZooListViewController: UICollectionViewDelegate, UICollectionViewDataS
         zooListCollection.reloadData()
         }
     
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return  CGSize(width: collectionView.frame.width, height: 150)
+//    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return  CGSize(width: collectionView.frame.width, height: 150)
+        if isgrid {
+            return CGSize(width: collectionView.frame.width / 2 - 10, height: 200)
+        }
+        return CGSize(width: collectionView.frame.width, height: 200)
     }
+    
 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
